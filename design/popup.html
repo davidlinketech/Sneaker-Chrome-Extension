@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="popup.js"></script>
+    <title >Settings</title>
+</head>
+<body style="background-color: rgba(0, 106, 177, 0.801); min-width: 185px;">
+    <div>
+        <label style="display: inline-block; font-size: 1.2em; margin-right: 6px; border-radius: 4px;"><b>cart-delay:</b></label>
+        <input id="cartDelay" type="text" size="6.8" style="border-radius: 4px;"/>
+    </div>
+    <div style="margin-top: 5px;">
+        <label style="display: inline-block; font-size: 1.2em; margin-right: 6px; border-radius: 4px;"><b>checkout-delay:</b></label>
+        <input id="checkoutDelay" type="text" size="4" style="border-radius: 4px;"/>
+    </div>
+    <hr>
+    <div>
+        <label style="display: inline-block; font-size: 1.2em; margin-right: 6px; border-radius: 4px;"><b>preload-item:</b></label>
+        <input id="preloadItem" type="text" size="6.8" style="border-radius: 4px;"/>
+    </div>
+    <div style="margin-top: 5px;">
+        <label style="display: inline-block; font-size: 1.2em; margin-right: 6px; border-radius: 4px;"><b>auto-preload:</b></label>
+        <select id="autoPreload" style="width: 78px; border-radius: 4px;">
+            <option value="true">true</option>
+            <option value="false">false</option>
+        </select>
+    </div>
+    <hr>
+    <div>
+        <label style="display: inline-block; font-size: 1.2em; margin-right: 6px; border-radius: 4px;"><b>webhook:</b></label>
+        <input id="webhook" type="text" size="6.8" style="border-radius: 4px;"/>
+    </div>
+    <div style="margin-top: 5px;">
+        <label style="display: inline-block; font-size: 1.2em; margin-right: 6px; border-radius: 4px;"><b>region:</b></label>
+        <select id="region" style="width: 85px; border-radius: 4px;">
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+            <option value="AU">Austria</option>
+            <option value="BE">Belgium</option>
+            <option value="DK">Denmark</option>
+            <option value="IT">Italy</option>
+            <option value="PL">Poland</option>
+            <option value="ES">Spain</option>
+            <option value="NL">Netherlands</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="NO">Norway</option>
+            <option value="co.uk">UK</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="FI">Finland</option>
+            <option value="IE">Ireland</option>
+        </select>
+    </div>
+    <hr>
+    <button id="saveBtn" class="button" style="color: white;">save</button>
+</body>
+</html>

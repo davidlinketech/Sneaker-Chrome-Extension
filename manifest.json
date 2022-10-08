@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "Sneaker Extension",
+    "description": "cooking zalando/snipes/... :)",
+    "version": "0.2",
+    "permissions": ["storage", "tabs", "activeTab", "<all_urls>"],
+    "icons": {
+        "16": "/images/icon1.png",
+        "48": "/images/icon2.png",
+        "128": "/images/icon3.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "/images/icon1.png",
+            "48": "/images/icon2.png",
+            "128": "/images/icon3.png"
+        },
+        "default_popup": "design/popup.html",
+        "default_title": "Sneaker Extension"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": [
+                "*://*.zalando.*/*"
+            ],
+            "js": [ "sites/basic.js", "sites/zalando.js", "thirdparty/iziToast.min.js"],
+			"css": ["thirdparty/iziToast.min.css"]
+        },
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": [
+                "*://*.snipes.*/*"
+            ],
+            "js": [ "sites/basic.js", "sites/snipes.js", "thirdparty/iziToast.min.js"],
+			"css": ["thirdparty/iziToast.min.css"]
+        }
+    ]
+}
